@@ -30,7 +30,8 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "i18nMissingTranslation": "warning"
           },
           "configurations": {
             "production": {
@@ -61,6 +62,46 @@
                   "maximumError": "10kb"
                 }
               ]
+            },
+            "pt" : {
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "i18nFile": "src/locale/messages.pt.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "pt"
+            },
+            "es" : {
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "i18nFile": "src/locale/messages.es.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "es"
             }
           }
         },
@@ -72,6 +113,12 @@
           "configurations": {
             "production": {
               "browserTarget": "sampleInternationalization:build:production"
+            },
+            "pt" : {
+              "browserTarget": "sampleInternationalization:build:pt"
+            },
+            "es" : {
+              "browserTarget": "sampleInternationalization:build:es"
             }
           }
         },
