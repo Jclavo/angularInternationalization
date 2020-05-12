@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, LOCALE_ID, Inject } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-main',
@@ -8,7 +9,16 @@ import { Component, OnInit } from '@angular/core';
 export class MainComponent implements OnInit {
 
   public currentDate = new Date();
-  constructor() { }
+  public footMessage: string = "Good bye";
+
+  public languages = [
+    { code: 'en', label: 'English'},
+    { code: 'es', label: 'Español'},
+    { code: 'pt', label: 'Portugues'}
+  ];
+
+  constructor(@Inject(LOCALE_ID) public localeId: string,
+             public router: Router) { }
 
   ngOnInit() {
   }
