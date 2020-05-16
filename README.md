@@ -1,27 +1,21 @@
 # SampleInternationalization
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.18.
+This project shows how to use `I18N` and its `features` as.
 
-## Development server
+- Translate values from `html` tags.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Translate values like dates, currencies, etc using `pipes`.
 
-## Code scaffolding
+- Translate values inside `typescript` code.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Deploy in each language.
 
-## Build
+## Useful commands
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run with `ng serve` and add to configuration the language code
 
-## Running unit tests
+- ng serve --configuration=es
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Deploy in all the languages
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- npm run build-i18n
