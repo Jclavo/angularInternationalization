@@ -18,7 +18,7 @@
           <context context-type="linenumber">5</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="foot">
+      <trans-unit id="main.foot">
         <source>Thanks for visiting us.</source>
         <target>Obrigado pela visita.</target>
       </trans-unit>
