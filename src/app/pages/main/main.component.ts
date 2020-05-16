@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 export class MainComponent implements OnInit {
 
   public currentDate = new Date();
-  public footMessage: string = "Good bye";
+  public footMessage = $localize`:@@foot:Thanks for visiting us.`;
 
   public languages = [
     { code: 'en', label: 'English'},
