@@ -19,3 +19,7 @@ Run with `ng serve` and add to configuration the language code
 Deploy in all the languages
 
 - npm run build-i18n
+
+Generate i18n file
+
+- ng xi18n
