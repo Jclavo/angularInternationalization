@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetailComponent implements OnInit {
 
+  public clickedMessage = $localize`:@@detail.clicked:`;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onButton(){
+    alert(this.clickedMessage);
   }
 
 }
