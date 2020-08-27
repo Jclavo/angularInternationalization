@@ -1,15 +1,13 @@
 <h2 i18n="@@main.title">Welcome to my app</h2>
 
-<!-- <br> -->
-
 <p i18n="@@main.hour">Today is <strong>{{currentDate | date: 'long'}}</strong></p>
-<!-- <br> -->
+
 <ng-template ngFor let-lang [ngForOf]="languages">
-    <span *ngIf="lang.code !== localeId">
-      <a href="/{{lang.code}}/">{{lang.label}}</a> </span>
-    <span *ngIf="lang.code === localeId">{{lang.label}} </span>
-  </ng-template>
+  <span *ngIf="lang.code !== localeId">
+    <a href="/{{lang.code}}/">{{lang.label}}</a> </span>
+  <span *ngIf="lang.code === localeId">{{lang.label}} </span>
+</ng-template>
 
-  <button [routerLink]="['/detail']"  color="success">Details</button>
+<button [routerLink]="['/detail']" color="success">Details</button>
 
-  <p>{{footMessage}}</p>
+<p>{{footMessage}}</p>
