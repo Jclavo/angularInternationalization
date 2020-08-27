@@ -10,7 +10,7 @@ This project shows how to use `I18N` and its `features` as.
 
 - Deploy in each language.
 
-## Useful commands
+## Useful commands for Version 1 working with angular-cli i18n
 
 Run with `ng serve` and add to configuration the language code
 
@@ -23,3 +23,17 @@ Deploy in all the languages
 Generate i18n file
 
 - ng xi18n
+
+## Useful commands for Version 2 working with library xliffmerge with angular-cli
+
+Add library
+
+- ng add @ngx-i18nsupport/tooling --i18nLocale=en --languages en,es,pt
+
+Generate XLF files
+
+- npm run extract-i18n
+
+Run in an specific language
+
+- npm run start-en
