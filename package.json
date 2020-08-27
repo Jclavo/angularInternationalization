@@ -8,7 +8,10 @@
     "build-i18n": "for lang in es pt; do ng build --output-path=dist/$lang --aot --prod --base-href /$lang/ --i18n-file=src/locale/messages.$lang.xlf --i18n-locale=$lang; done && ng build --output-path=dist/en --aot --prod --base-href /en/",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "extract-i18n": "ng xi18n sampleInternationalization --i18n-format xlf --output-path src/i18n --i18n-locale en && ng run sampleInternationalization:xliffmerge",
+    "start-es": "ng serve --configuration=es",
+    "start-pt": "ng serve --configuration=pt"
   },
   "private": true,
   "dependencies": {
@@ -21,6 +24,7 @@
     "@angular/platform-browser": "~9.1.7",
     "@angular/platform-browser-dynamic": "~9.1.7",
     "@angular/router": "~9.1.7",
+    "@ngx-i18nsupport/tooling": "^8.0.3",
     "rxjs": "~6.5.5",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
@@ -30,6 +34,7 @@
     "@angular/cli": "~9.1.6",
     "@angular/compiler-cli": "~9.1.7",
     "@angular/language-service": "~9.1.7",
+    "@ngx-i18nsupport/ngx-i18nsupport": "^1.1.6",
     "@types/jasmine": "~3.5.10",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
