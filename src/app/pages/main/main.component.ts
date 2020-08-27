@@ -14,7 +14,7 @@ export class MainComponent implements OnInit {
   public languages = [
     { code: 'en', label: 'English'},
     { code: 'es', label: 'Español'},
-    { code: 'pt', label: 'Portugues'}
+    { code: 'pt', label: 'Português'}
   ];
 
   constructor(@Inject(LOCALE_ID) public localeId: string,
