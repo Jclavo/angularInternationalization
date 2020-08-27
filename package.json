@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build-i18n": "for lang in es pt; do ng build --output-path=dist/$lang --aot --prod --base-href /$lang/ --i18n-file=src/locale/messages.$lang.xlf --i18n-locale=$lang; done && ng build --output-path=dist/en --aot --prod --base-href /en/",
+    "build-i18n": "for lang in en es pt; do ng build --output-path=dist/$lang --aot --prod --base-href /$lang/ --i18n-file=src/i18n/messages.$lang.xlf --i18n-locale=$lang; done",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
